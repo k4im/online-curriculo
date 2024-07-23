@@ -3,3 +3,57 @@
     font-weight: 250;
     font-family: 'Almarai';
 }
+
+.nav {
+    font-size: 5rem;
+    font-weight: 500;
+}
+.nav-link {
+    font-size: 1.5rem;
+}
+.hero-h2 {
+    font-weight: 800;
+    font-family: 'Open Sans';
+    letter-spacing: 0.2rem;
+}
+.hero-slogan-p {
+    font-family: 'Almarai';
+}
+.btn {
+    width: 15rem;
+    height: 4rem;
+    text-align: center;
+}
+.scroll-container {
+    position: absolute;
+    width: 2rem;
+    height: 5rem;
+    bottom: 2rem;
+    border-radius: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.1rem solid white;
+}
+.scroll-ball {
+    width: 1rem;
+    height: 1rem;
+    background-color: white;
+    border-radius: 2rem;
+}
+@media (max-width: 500px) {
+    #nav-menu {
+        visibility: hidden;
+    }
+    #hero-section {
+        gap: 100px
+    }
+
+    #list-icons {
+        gap: 20px
+    }
+
+    .scroll-container {
+        bottom: 15rem;
+    }
+}
