@@ -1,0 +1,21 @@
+
+/* ================== SOBRE MIM ==================================== */
+.container-sobre {
+    position: absolute;
+    top: 75.3rem;
+}
+.text-reveal  {
+    font-family: 'Almarai';
+}
+#sobre-mim {
+    opacity: 0;
+    transition: ease-in-out;
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-top: 10rem;
+}
+#info > p {
+    transform: translateY(100px);
+    opacity: 0;
+}
+/* ================== SOBRE MIM ==================================== */

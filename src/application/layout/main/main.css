@@ -1,0 +1,43 @@
+
+@media (max-width: 500px) {
+    #nav-menu {
+        visibility: hidden;
+    }
+    #hero-section {
+        gap: 100px
+    }
+
+    #list-icons {
+        gap: 20px
+    }
+
+    .scroll-container {
+        margin-bottom: 15rem;
+    }
+    .container-sobre {
+        top: 89rem
+    }
+    #info-1 {
+        width: 100%;
+        font-size: 2rem;
+    }
+    #info-1 > span {
+        font-size: 2rem;
+    }
+
+    #info-2 {
+        width: 100%;
+        font-size: 2rem;
+    }
+    #info-2 > span {
+        font-size: 2rem;
+    }
+
+    #info-3 {
+        width: 100%;
+        font-size: 2rem;
+    }
+    #info-3 > span {
+        font-size: 2rem;
+    }
+}
