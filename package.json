@@ -1,7 +1,7 @@
 {
   "name": "vite-project",
   "private": true,
-  "homepage": "k4im.github.io/online-curriculo",
+  "homepage": "https://k4im.github.io/online-curriculo/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
