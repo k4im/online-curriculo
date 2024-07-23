@@ -1,10 +1,5 @@
-.hero {
-    width: 100vw;
-    height: 100vh;
-}
-
-.container-left {
-    width: 50%;
-    height: 50%;
-    background-color: green;
+.text-loader {
+    letter-spacing: 0.3rem;
+    font-weight: 250;
+    font-family: 'Almarai';
 }
