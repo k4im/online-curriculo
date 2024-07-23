@@ -11,7 +11,7 @@ export function Hero()
         <div id='slogan' className="w-3/5 h-1/2 flex flex-col gap-5 items-center justify-center overflow-hidden">
           <div className="hero-slogan overflow-hidden flex flex-col items-center">
             <h2 className='text-white text-center h2-container'>
-              <span className='text-5xl hero-h2'>Desenvolvedor de software full stack.</span>
+              <span className='hero-h2'>Desenvolvedor de software full stack.</span>
             </h2>
             <p className='text-white text-3xl text-center p-container overflow-hidden mt-10'>
               <span className='text-3xl hero-slogan-p'>Impulsionando empresas com tecnologia.</span>

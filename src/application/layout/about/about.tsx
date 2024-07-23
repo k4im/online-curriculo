@@ -1,7 +1,7 @@
 import './about.css'
 export function About() {
     return <>
-        <section id='sobre' className="hidden container-sobre h-screen w-screen flex gap-6 flex-col justify-start items-center">
+        <section id='sobre' className="hidden overflow-hidden container-sobre h-screen w-screen flex gap-6 flex-col justify-start items-center">
             <h1 id='sobre-mim' className='text-4xl text-white mb-10'>SOBRE MIM</h1>
             <div id='info' className=" flex flex-col gap-2 justify-center text-center items-center w-3/5">
                 <p id='info-1' className='text-reveal text-5xl text-white'>Me chamo João Victor, tenho <span className='text-purple-500 text-5xl'>24 anos</span>,

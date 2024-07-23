@@ -1,5 +1,8 @@
 
 @media (max-width: 500px) {
+    .hero-h2 {
+        font-size: 2rem !important;
+    }
     #nav-menu {
         visibility: hidden;
     }

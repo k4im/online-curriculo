@@ -12,12 +12,12 @@ export function MainApp() {
       [
         '.preloader-text-1',
         '.preloader-text-2',
-        '.preloader-text-3',
-        '.preloader-text-4',
-        '.preloader-text-5',
-        '.preloader-text-6',
-        '.preloader-text-7',
-        '.preloader-text-8',
+        // '.preloader-text-3',
+        // '.preloader-text-4',
+        // '.preloader-text-5',
+        // '.preloader-text-6',
+        // '.preloader-text-7',
+        // '.preloader-text-8',
       ]
     const preloader = gsap.timeline()
 
@@ -44,7 +44,10 @@ export function MainApp() {
     preloader.to('.preloader', {
       yPercent: '-100',
       duration: 1,
-      onComplete: () => { document.getElementById('sobre')?.classList.toggle('hidden') }
+      onComplete: () => { 
+        document.querySelector('.preloader')?.classList.toggle('hidden') 
+        document.getElementById('sobre')?.classList.toggle('hidden') 
+      }
     })
   }
   function animateIcons() {
@@ -53,7 +56,7 @@ export function MainApp() {
     introLoader.from('.icon-menu', {
       transform: 'translateY(50px)',
       stagger: 0.5,
-      delay: 25,
+      delay: 6.5,
       duration: 0.8
     })
       .to('.icon-menu', {
@@ -68,7 +71,7 @@ export function MainApp() {
     introLoader.from('.nav-item-link', {
       transform: 'translateY(50px)',
       stagger: 0.5,
-      delay: 25,
+      delay: 6.5,
       duration: 0.8
     }).to('.nav-item-link', {
       transform: 'translateY(0)',
@@ -82,7 +85,7 @@ export function MainApp() {
     introLoader.from('.h2-container', {
       opacity: 0,
       transform: 'translateY(80px)',
-      delay: 26,
+      delay: 6.5,
       duration: 0.5
     }).to('.h2-container', {
       transform: 'translateY(0)',
@@ -104,7 +107,7 @@ export function MainApp() {
     });
     animateBackground.from('.btn', {
       opacity: 0,
-      delay: 28
+      delay: 8
     })
     animateBackground.to('.btn', {
       duration: 2,
@@ -160,7 +163,7 @@ export function MainApp() {
     const animateScroll = gsap.timeline({ repeat: -1 });
     animateScroll.from('.scroll-container', {
       opacity: 0,
-      delay: 28
+      delay: 8
     })
     animateScroll.to('.scroll-ball', {
       duration: 2,
