@@ -1,15 +1,27 @@
+/* ============================ PRELOADER =================== */
 .text-loader {
     letter-spacing: 0.3rem;
     font-weight: 250;
     font-family: 'Almarai';
 }
+/* ============================ PRELOADER =================== */
 
+/* ============================ HERO ========================= */
 .nav {
     font-size: 5rem;
     font-weight: 500;
 }
 .nav-link {
     font-size: 1.5rem;
+}
+.nav-item-link:hover {
+    transition: ease-in-out 0.8s;
+    color: #A855F7;
+}
+.icon-menu:hover {
+    transition: ease-in-out 0.8s;
+    color: #A855F7;
+
 }
 .hero-h2 {
     font-weight: 800;
@@ -25,10 +37,10 @@
     text-align: center;
 }
 .scroll-container {
-    position: absolute;
+    overflow: hidden;
     width: 2rem;
-    height: 5rem;
-    bottom: 2rem;
+    height: 6rem;
+    margin-bottom: 2rem;
     border-radius: 1.5rem;
     display: flex;
     justify-content: center;
@@ -40,6 +52,27 @@
     height: 1rem;
     background-color: white;
     border-radius: 2rem;
+}
+/* ============================ HERO ========================= */
+
+/* ================== SOBRE MIM ==================================== */
+.container-sobre {
+    position: absolute;
+    top: 75.3rem;
+}
+.text-reveal  {
+    font-family: 'Almarai';
+}
+#sobre-mim {
+    opacity: 0;
+    transition: ease-in-out;
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-top: 10rem;
+}
+#info > p {
+    transform: translateY(100px);
+    opacity: 0;
 }
 @media (max-width: 500px) {
     #nav-menu {
@@ -54,6 +87,32 @@
     }
 
     .scroll-container {
-        bottom: 15rem;
+        margin-bottom: 15rem;
+    }
+    .container-sobre {
+        top: 89rem
+    }
+    #info-1 {
+        width: 100%;
+        font-size: 2rem;
+    }
+    #info-1 > span {
+        font-size: 2rem;
+    }
+
+    #info-2 {
+        width: 100%;
+        font-size: 2rem;
+    }
+    #info-2 > span {
+        font-size: 2rem;
+    }
+
+    #info-3 {
+        width: 100%;
+        font-size: 2rem;
+    }
+    #info-3 > span {
+        font-size: 2rem;
     }
 }
