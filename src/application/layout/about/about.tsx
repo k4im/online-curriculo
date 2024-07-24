@@ -4,7 +4,8 @@ import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export function About() {
-
+    const currentDate = new Date().getFullYear();
+    const startDate = 2022
     useLayoutEffect(() => {
         animateScrollSobre();
         animateScrollInfo();
@@ -19,10 +20,10 @@ export function About() {
             <h1 id='sobre-mim' className='text-4xl text-white mb-10'>SOBRE MIM</h1>
             <div id='info' className=" flex flex-col gap-2 justify-center text-center items-center w-3/5">
                 <p id='info-1' className='text-reveal text-5xl text-white'>Me chamo João Victor, tenho <span className='text-purple-500 text-5xl'>24 anos</span>,
-                    trabalho com TI a <span className='text-purple-500 text-5xl'>2.5 anos,</span> atualmente estou cursando
+                    trabalho com TI a <span className='text-purple-500 text-5xl'>{currentDate - startDate} anos,</span> atualmente estou cursando
                     <span className='text-purple-500 text-5xl'> Analise e desenvolvimento de sistemas</span>.</p>
                 <p id='info-2' className='text-reveal text-5xl text-white mt-7'>Amante de arquitetura de software, Linux e aplicações nativas em cloud.</p>
-                <p id='info-3' className='text-reveal text-5xl text-white mt-7'>Construindo aplicações escalaveis e de facil manutenção a <span className='text-purple-500 text-5xl'>2.5 anos.</span></p>
+                <p id='info-3' className='text-reveal text-5xl text-white mt-7'>Construindo aplicações escalaveis e de facil manutenção a <span className='text-purple-500 text-5xl'>{currentDate - startDate} anos.</span></p>
             </div>
         </section>
 
@@ -33,7 +34,7 @@ export function About() {
                     como analista de infraestrutura, onde tinha como responsabilidade administração de servidores de clientes e servidores internos da empresa
                      atuando diretamente como <span className='text-purple-500 text-5xl'>SysAdmin</span>.</p>
                 <p id='info-2-ja-fiz' className='text-reveal text-5xl text-white mt-7'>Além de prestar suporte a equipe de desenvolvimento atuando na construção de pipelines.</p>
-                <p id='info-3-ja-fiz' className='text-reveal text-5xl text-white mt-7'>Para automatizar o deploy dos softwares da empresa com <span className='text-purple-500 text-5xl'>CI/CD.</span></p>
+                <p id='info-3-ja-fiz' className='text-reveal text-5xl text-white mt-7'>Automatizando o deploy dos softwares da empresa com <span className='text-purple-500 text-5xl'>CI/CD.</span></p>
             </div>
         </section>
     </>
