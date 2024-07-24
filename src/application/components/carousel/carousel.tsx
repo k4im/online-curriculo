@@ -50,7 +50,7 @@ function animateCarrousel(wrapperRef: any) {
     const totalWidth = slides.length * slideWidth;
   
     const carouselTL = gsap.timeline({ repeat: -1 });
-    carouselTL.fromTo('.wrapper', { x: totalWidth * 0.2 }, { x: -totalWidth * 0.3, duration: 20, ease: 'linear' })
+    carouselTL.fromTo('.wrapper', { x: totalWidth * 0.7 }, { x: -totalWidth * 0.3, duration: 20, ease: 'linear' })
     .totalProgress(0.5);
   
 }
