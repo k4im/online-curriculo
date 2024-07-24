@@ -82,6 +82,7 @@ function createPreloader() {
     onComplete: () => { 
       document.querySelector('.preloader')?.classList.toggle('hidden') 
       document.getElementById('sobre')?.classList.toggle('hidden') 
+      document.getElementById('oq-fiz')?.classList.toggle('hidden') 
     }
   })
 }

@@ -43,4 +43,28 @@
     #info-3 > span {
         font-size: 2rem;
     }
+
+    #info-1-ja-fiz {
+        width: 100%;
+        font-size: 2rem;
+    }
+    #info-1-ja-fiz > span {
+        font-size: 2rem;
+    }
+
+    #info-2-ja-fiz {
+        width: 100%;
+        font-size: 2rem;
+    }
+    #info-2-ja-fiz > span {
+        font-size: 2rem;
+    }
+
+    #info-3-ja-fiz {
+        width: 100%;
+        font-size: 2rem;
+    }
+    #info-3-ja-fiz > span {
+        font-size: 2rem;
+    }
 }
