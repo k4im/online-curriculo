@@ -181,7 +181,13 @@ function animateScroll() {
     ease: "power1.inOut",
   })
 }
+/**
+ * Show Carousel.
+ * 
+ * Função utilizada para fazer o fadeIn
+ * do carousel.
+ */
 function showCarousel() {
   const carouselTL = gsap.timeline();
-  carouselTL.fromTo('#carousel', {opacity: 0}, {opacity: 1, duration: 1.5, delay: 6.8});
+  carouselTL.fromTo('#carousel', {opacity: 0}, {opacity: 1, duration: 1.5, delay: 6.8, ease: 'power1.in'});
 }
