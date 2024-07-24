@@ -11,11 +11,11 @@ export function NavBar()
           <div id='nav-menu' className="nav-bar w-full h-20 flex justify-around items-center mt-10">
             <ul className='nav text-white flex flex-row gap-5 text-center mb-3 overflow-hidden'>
               <li className='nav-item-link overflow-hidden'>
-                <a className='nav-link overflow-hidden' href="">HOME</a></li>
+                <a className='nav-link overflow-hidden' href="#hero-section">HOME</a></li>
               <li className='nav-item-link overflow-hidden'>
-                <a className='nav-link overflow-hidden' href="">CONTATO</a></li>
+                <a className='nav-link overflow-hidden' href="#">CONTATO</a></li>
               <li className='nav-item-link overflow-hidden'>
-                <a className='nav-link overflow-hidden' href="">SOBRE</a></li>
+                <a className='nav-link overflow-hidden' href="#sobre">SOBRE</a></li>
             </ul>
           </div>
 
