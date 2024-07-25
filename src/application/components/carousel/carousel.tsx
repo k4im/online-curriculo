@@ -30,7 +30,7 @@ export function Carousel()
           <p className="carrousel-text text-white text-center">*</p>
           <p className="carrousel-text text-white text-center">Linux</p>
           <p className="carrousel-text text-white text-center">*</p>
-          <p className="carrousel-text text-white text-center">CI/CD</p>
+          <p className="carrousel-text text-white ">Pipeline</p>
           <p className="carrousel-text text-white text-center">*</p>
           <p className="carrousel-text text-white text-center">Rust</p>
           <p className="carrousel-text text-white text-center">*</p>
@@ -51,7 +51,7 @@ function animateCarrousel(wrapperRef: any) {
   
     const carouselTL = gsap.timeline({ repeat: -1 });
     // carouselTL.fromTo('.wrapper', { x: totalWidth * 0.7 }, { x: -totalWidth * 0.3, duration: 20, ease: 'linear' })
-    carouselTL.fromTo('.wrapper', { x: totalWidth * 0.5  }, { x: -totalWidth * 0.5, duration: 20, ease: 'power1.inOut' })
+    carouselTL.fromTo('.wrapper', { x: totalWidth * 0.7  }, { x: -totalWidth * 0.3, duration: 20, ease: 'power1.inOut' })
     ;
   
 }
