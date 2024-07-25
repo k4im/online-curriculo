@@ -49,7 +49,7 @@ function animateCarrousel(wrapperRef: any) {
     const slideWidth = slides[0].offsetWidth; // Assuming all slides have the same width
     const totalWidth = slides.length * slideWidth;
   
-    const carouselTL = gsap.timeline({ repeat: -1 });
+    const carouselTL = gsap.timeline({ repeat: -1, smoothChildTiming: true, yoyo: true});
     // carouselTL.fromTo('.wrapper', { x: totalWidth * 0.7 }, { x: -totalWidth * 0.3, duration: 20, ease: 'linear' })
     carouselTL.fromTo('.wrapper', { x: totalWidth * 0.7  }, { x: -totalWidth * 0.3, duration: 20, ease: 'power1.inOut' })
     ;
