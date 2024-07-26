@@ -2,7 +2,6 @@ import './experience.css'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from 'gsap';
 import { useLayoutEffect, useRef } from 'react';
-import SplitType from 'split-type'
 
 export function Experience() {
     useLayoutEffect(() => {
