@@ -8,7 +8,8 @@ function App() {
           new LocomotiveScroll({
             //@ts-ignore
             el: document.querySelector('[data-scroll-container]'),
-            smooth: true
+            smooth: true,
+            lerp: 1250,
           });
         })()
       })
