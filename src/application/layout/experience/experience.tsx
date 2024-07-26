@@ -30,10 +30,9 @@ function animateBallReveal()
             end: '590px, 600px'
         }
     });
-    ballTL1.fromTo('.ball-reveal', {opacity: 0}, {opacity: 1, y: 280, delay: 10, duration: 25000, ease: 'power1.inOut'})
+    ballTL1.to('.ball-reveal', {opacity: 1, y: 280, delay: 10, duration: 25000, ease: 'power1.inOut'})
     ballTL1.to('.ball-reveal', 
-        {opacity: 1, scale: 100, duration: 25000, delay: 10,  ease: 'power1.inOut',
-            onComplete: () => {document.querySelector('.ball-reveal')?.classList.toggle('hidden')}})
-    ballTL1.fromTo('#container-xp', {opacity: 0,}, {opacity: 1, duration: 1.8, delay: 10, ease: 'power1.inOut'})
-    ballTL1.fromTo('.xp-h2', {opacity: 0}, {opacity: 1, duration: 1.8, delay: 25, ease: 'power1.inOut'})
+        {opacity: 1, scale: 100, duration: 25000, delay: 10,  ease: 'power1.inOut'})
+    ballTL1.to('#container-xp', {opacity: 1, duration: 1.8, delay: 10, ease: 'power1.inOut'})
+    ballTL1.to('.xp-h2', {opacity: 1, duration: 1.8, delay: 25, ease: 'power1.inOut'})
 }
