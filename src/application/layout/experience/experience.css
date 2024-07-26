@@ -9,6 +9,7 @@
     height: 25px;
     background-color: #ecf0f1;
     border-radius: 50%;
+    transition: ease-in-out 50ms;
     /* transform: scale(100); */
 }
 .xp-h2 {
