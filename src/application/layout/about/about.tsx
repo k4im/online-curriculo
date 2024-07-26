@@ -54,7 +54,7 @@ function animateScrollInfo() {
       {
         scrollTrigger: {
           trigger: '#info',
-          start: '850px 300px',
+          start: '850px 400px',
           end: '1225px 450px',
           scrub: true,
         }
@@ -66,8 +66,8 @@ function animateScrollInfo() {
         ease: 'power3.inOut', // Corrigida a propriedade ease      
         opacity: 1,
         transform: 'translateY(0px)',
-        duration: 35,
-        delay: 15,
+        duration: 350,
+        delay: 150,
         alpha: 1
       })
   
@@ -86,14 +86,14 @@ function animateFadeOutSobreInfo() {
       {
         scrollTrigger: {
           trigger: '#sobre',
-          start: '350px 300px',
-          end: 'bottom 400px',
+          start: '350px 370px',
+          end: '560px 395px',
           scrub: true,
         }
       }
     );
     animateScrollSobre.to(['#info-1', '#info-2', '#info-3', '#sobre-mim'], {
-        ease: 'ease-in-out', // Corrigida a propriedade ease      
+        ease: 'power1.inOut', // Corrigida a propriedade ease      
         opacity: 0,
         transform: 'translateY(50px)',
         duration: 2,
@@ -204,16 +204,16 @@ function animateFadeOutSobreOqJaFiz() {
     {
       scrollTrigger: {
         trigger: '#oq-fiz',
-        start: '350px 300px',
-        end: '800px 400px',
+        start: '350px 360px',
+        end: '600px 400px',
         scrub: true,
       }
     }
   );
   animateScrollSobre.to(['#info-1-ja-fiz', '#info-2-ja-fiz', '#info-3-ja-fiz', '#oq-ja-fiz'], {
-      ease: 'ease-in-out', // Corrigida a propriedade ease      
+      ease: 'power1.inOut', // Corrigida a propriedade ease      
       opacity: 0,
-      transform: 'translateY(-50px)',
+      transform: 'translateY(50px)',
       duration: 2,
       delay: 0.5,
       alpha: 1

@@ -3,6 +3,7 @@
     top: 183rem;
 }
 .ball-reveal {
+    position: absolute;
     opacity: 0;
     width: 25px;
     height: 25px;
@@ -27,3 +28,5 @@
     top: 183rem;
     background-color: #ecf0f1;    
 }
+
+
