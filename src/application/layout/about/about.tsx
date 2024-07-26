@@ -170,7 +170,6 @@ function animateScrollInfoJaFiz() {
       {
         scrollTrigger: {
           trigger: '#info-ja-fiz',
-          markers: true,
           start: '1600px 380px',
           end: '1800px 400px',
           scrub: true,
