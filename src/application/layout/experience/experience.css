@@ -1,0 +1,27 @@
+#xp {
+    position: absolute;
+    top: 183rem;
+}
+.ball-reveal {
+    opacity: 0;
+    width: 25px;
+    height: 25px;
+    background-color: #ecf0f1;
+    border-radius: 50%;
+    /* transform: scale(100); */
+}
+.xp-h2 {
+    padding-top: 1.5rem;
+    font-size: 3rem;
+    font-weight: 800;
+    font-family: 'Open Sans';
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); */
+    line-height: 2rem;
+    transition: ease-in-out .5s;
+}
+
+#container-xp {
+    position: absolute;
+    top: 183rem;
+    background-color: #ecf0f1;    
+}

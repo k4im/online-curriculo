@@ -1,10 +1,10 @@
 import './main.css'
-import { useEffect, useLayoutEffect, useRef } from 'react';
+import { useLayoutEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import LocomotiveScroll from 'locomotive-scroll';
 import { Preloader } from '../preloader/preloader';
 import { Hero } from '../hero/hero';
+import { Experience } from '../experience/experience';
 
 export function MainApp() 
 {
@@ -24,14 +24,11 @@ export function MainApp()
     return () => gsap.killTweensOf('#intro-slide')
   }, [])
 
-  useEffect(() => {
-    const locomotive = new LocomotiveScroll();
-    locomotive.init();
-  })
   return <>
     <div ref={comp} className="relative">
       <Preloader></Preloader>
       <Hero></Hero>
+      <Experience></Experience>
     </div>
   </>
 }
@@ -83,6 +80,8 @@ function createPreloader() {
       document.querySelector('.preloader')?.classList.toggle('hidden') 
       document.getElementById('sobre')?.classList.toggle('hidden') 
       document.getElementById('oq-fiz')?.classList.toggle('hidden') 
+      document.getElementById('xp')?.classList.toggle('hidden') 
+      document.getElementById('container-xp')?.classList.toggle('hidden') 
     }
   })
 }

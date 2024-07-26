@@ -12,6 +12,7 @@ export function About() {
         animateFadeOutSobreInfo();
         animateScrollJaFiz();
         animateScrollInfoJaFiz();
+        animateFadeOutSobreOqJaFiz();
         return () => gsap.killTweensOf('#sobre-mim')
       }, [])
     
@@ -186,5 +187,35 @@ function animateScrollInfoJaFiz() {
         alpha: 1
       })
   
+    })
+}
+
+
+/**
+ * Animate scroll info.
+ * 
+ * Função utilizada para animar partes
+ * da informações do sobre como elas
+ * vão aparecendo conforme scroll é realizado.
+ */
+function animateFadeOutSobreOqJaFiz() {
+  gsap.registerPlugin(ScrollTrigger);
+  const animateScrollSobre = gsap.timeline(
+    {
+      scrollTrigger: {
+        trigger: '#oq-fiz',
+        start: '350px 300px',
+        end: '800px 400px',
+        scrub: true,
+      }
+    }
+  );
+  animateScrollSobre.to(['#info-1-ja-fiz', '#info-2-ja-fiz', '#info-3-ja-fiz', '#oq-ja-fiz'], {
+      ease: 'ease-in-out', // Corrigida a propriedade ease      
+      opacity: 0,
+      transform: 'translateY(-50px)',
+      duration: 2,
+      delay: 0.5,
+      alpha: 1
     })
 }
