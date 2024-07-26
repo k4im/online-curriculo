@@ -26,13 +26,13 @@ function animateBallReveal()
         scrollTrigger: {
             trigger: '#xp',
             scrub: true,
-            start: '100px 585px',
+            start: '250px 595px',
             end: '590px, 600px'
         }
     });
     ballTL1.to('.ball-reveal', {opacity: 1, y: 280, delay: 1000, duration: 250000, ease: 'power1.inOut'})
     ballTL1.to('.ball-reveal', 
-        {opacity: 1, scale: 100, duration: 250000, delay: 1000,  ease: 'power1.inOut'})
-    ballTL1.to('#container-xp', {opacity: 1, duration: 1.8, delay: 1000, ease: 'power1.inOut'})
+        {opacity: 1, scale: 100, duration: 550000, delay: 2500,  ease: 'power1.inOut'})
+    ballTL1.to('#container-xp', {opacity: 1, duration: 1.8, delay: 2500, ease: 'power1.inOut'})
     ballTL1.to('.xp-h2', {opacity: 1, duration: 1.8, delay: 25, ease: 'power1.inOut'})
 }

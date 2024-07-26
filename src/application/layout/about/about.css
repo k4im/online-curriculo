@@ -30,11 +30,11 @@
 #info > p {
     transform: translateY(100px);
     opacity: 0;
-    transition: ease-in-out .2s;
+    transition: ease-in-out 50ms;
 }
 #info-ja-fiz > p {
     transform: translateY(100px);
     opacity: 0;
-    transition: ease-in-out .2s;
+    transition: ease-in-out 50ms;
 }
 /* ================== SOBRE MIM ==================================== */

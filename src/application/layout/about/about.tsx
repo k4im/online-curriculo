@@ -87,7 +87,7 @@ function animateFadeOutSobreInfo() {
         scrollTrigger: {
           trigger: '#sobre',
           start: '350px 370px',
-          end: '560px 395px',
+          end: '590px 395px',
           scrub: true,
         }
       }
@@ -170,7 +170,8 @@ function animateScrollInfoJaFiz() {
       {
         scrollTrigger: {
           trigger: '#info-ja-fiz',
-          start: '1600px 340px',
+          markers: true,
+          start: '1600px 380px',
           end: '1800px 400px',
           scrub: true,
         }
