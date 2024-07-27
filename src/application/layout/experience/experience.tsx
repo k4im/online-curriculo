@@ -2,8 +2,6 @@ import './experience.css'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from 'gsap';
 import { useLayoutEffect, useRef } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 export function Experience() {
     useLayoutEffect(() => {
