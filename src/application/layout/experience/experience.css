@@ -9,7 +9,7 @@
     height: 25px;
     background-color: #ecf0f1;
     border-radius: 50%;
-    transition: ease-in-out 50ms;
+    transition: ease-in-out 20ms;
     /* transform: scale(100); */
 }
 .xp-h2 {
@@ -18,16 +18,109 @@
     font-size: 3rem;
     font-weight: 800;
     font-family: 'Open Sans';
-    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); */
     line-height: 2rem;
     transition: ease-in-out .5s;
 }
 
 #container-xp {
     opacity: 0;
+    height: 100rem;
+    flex-direction: column;
     position: absolute;
     top: 183rem;
+    /* transition: ease-in-out .5s; */
     background-color: #ecf0f1;    
 }
 
 
+.container-xp {
+
+    justify-content: center;
+    transition: ease-in-out .5s;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.h-xp-profission {
+    font-size: 5rem;
+    margin-left: 3rem;
+    font-weight: 800;
+    font-family: 'Almarai';
+}
+
+.p-xp-profission {
+    text-align: start;
+    width: 50%;
+    margin-left: 4rem;
+    letter-spacing: .024rem;
+    line-height: 2.8rem;
+    font-size: 2rem;
+    font-family: 'Open Sans';
+}
+.link {
+    margin-left: 4rem;
+    margin-top: 2rem;
+    transition: ease-in-out .5s;
+}
+.link-right:hover {
+    text-decoration: underline;
+    transition: ease-in-out .5s;
+}
+.link-right {
+    transition: ease-in-out .5s;
+}
+
+.link:hover {
+    transition: ease-in-out .5s;
+    text-decoration: underline;
+}
+.p-xp-profission-left {
+    width: 50%;
+    text-align: end;
+    /* margin-left: 4rem; */
+    letter-spacing: .024rem;
+    line-height: 2.8rem;
+    font-size: 2rem;
+    font-family: 'Open Sans';
+}
+
+
+@media screen and (max-width: 500px) {
+    .container-xp {
+        margin-top: 0px !important;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .h-xp-profission {
+        font-size: 3rem;
+        margin-left: 0px;
+    }
+    .p-xp-profission {
+        width: 100%;
+        margin-left: 0px;
+    }
+    .link {
+        margin: 0;
+        margin-top: 2rem;
+    }
+    #container-xp {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    #aspnet {
+        text-align: start;
+        justify-content: start;
+        align-items: start;
+        margin-top: 5rem;
+    }
+    .p-xp-profission-left {
+        text-align: start;
+        width: 100%;
+        margin-left: 0px;
+    }
+    #languages {
+        gap: 6rem;
+        margin-bottom: 35rem !important;
+    }
+}

@@ -9,7 +9,8 @@ function App() {
             //@ts-ignore
             el: document.querySelector('[data-scroll-container]'),
             smooth: true,
-            lerp: 1250,
+            lerp: 150000,
+            repeat: true,
           });
         })()
       })

@@ -15,7 +15,9 @@
     }
 
     .scroll-container {
-        margin-bottom: 15rem;
+        position: absolute;
+        /* height: 8rem !important; */
+        bottom: 25%;
     }
     .container-sobre {
         top: 89rem
