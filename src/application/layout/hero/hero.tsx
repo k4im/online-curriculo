@@ -36,6 +36,7 @@ export function Hero() {
           <a
             href='https://drive.google.com/file/d/1UsnzUHrILF03M3sRgS8ZdGZgff78kUGU/view'
             type="button"
+            target="_blank"
             className="
                 btn
                 text-white 

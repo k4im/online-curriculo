@@ -22,12 +22,12 @@ export function NavBar()
           <div id='nav-icons' className="nav-icons flex justify-centers items-center w-1/2 h-20 mt-10">
             <ul id='list-icons' className='nav text-white flex flex-row gap-10 text-center mb-3'>
               <li className='nav-item overflow-hidden'>
-                <a className='text-center overflow-hidden' href="https://github.com/k4im">
+                <a className='text-center overflow-hidden' target="_blank" href="https://github.com/k4im">
                   <FontAwesomeIcon icon={faGithub} className='h-7 text-white mt-6 icon-menu' />
                 </a>
               </li>
               <li className='nav-item overflow-hidden'>
-                <a className='overflow-hidden' href="https://www.linkedin.com/in/joao-victor-santos-leite/">
+                <a className='overflow-hidden' target="_blank" href="https://www.linkedin.com/in/joao-victor-santos-leite/">
                   <FontAwesomeIcon icon={faLinkedin} className='h-7 text-white mt-6 icon-menu' />
                 </a>
               </li>
