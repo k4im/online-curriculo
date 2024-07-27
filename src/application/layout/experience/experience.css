@@ -2,16 +2,6 @@
     position: absolute;
     top: 183rem;
 }
-.ball-reveal {
-    position: absolute;
-    opacity: 0;
-    width: 25px;
-    height: 25px;
-    background-color: #ecf0f1;
-    border-radius: 50%;
-    transition: ease-in-out 20ms;
-    /* transform: scale(100); */
-}
 .xp-h2 {
     opacity: 0;
     padding-top: 1.5rem;
@@ -28,8 +18,8 @@
     flex-direction: column;
     position: absolute;
     top: 183rem;
-    /* transition: ease-in-out .5s; */
-    background-color: #ecf0f1;    
+    transform: translateY(-100px);
+    transition: ease-in-out .3s;
 }
 
 
