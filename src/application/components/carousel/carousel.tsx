@@ -15,7 +15,7 @@ export function Carousel()
         return () => {
           gsap.killTweensOf('#carousel')
           gsap.killTweensOf('.wrapper')
-          // ctx.revert()
+          ctx.revert()
         };
       }, [])
     return <>
