@@ -15,7 +15,11 @@ export function MainApp()
     },
       comp
     );
-    return () => ctx.revert();
+    return () => {
+      gsap.killTweensOf('.preload-text-1');
+      gsap.killTweensOf('.preload-text-2');
+      ctx.revert();
+    }
   }, [])
 
 
@@ -44,17 +48,10 @@ function createPreloader() {
     [
       '.preloader-text-1',
       '.preloader-text-2',
-      // '.preloader-text-3',
-      // '.preloader-text-4',
-      // '.preloader-text-5',
-      // '.preloader-text-6',
-      // '.preloader-text-7',
-      // '.preloader-text-8',
     ]
   const preloader = gsap.timeline()
 
   preloaderTexts.forEach(element => {
-    console.log(element)
     preloader.from(element, {
       opacity: 0,
       y: '+=30',

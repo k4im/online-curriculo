@@ -1,3 +1,4 @@
+/* ======================== XP container ============================== */
 #xp {
     position: absolute;
     top: 183rem;
@@ -24,7 +25,6 @@
 
 
 .container-xp {
-
     justify-content: center;
     transition: ease-in-out .5s;
     align-items: center;
@@ -73,6 +73,7 @@
     font-size: 2rem;
     font-family: 'Open Sans';
 }
+/* ======================== XP container ============================== */
 
 
 @media screen and (max-width: 500px) {

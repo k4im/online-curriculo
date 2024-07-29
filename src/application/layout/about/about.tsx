@@ -1,4 +1,4 @@
-import { useLayoutEffect } from 'react';
+import { useLayoutEffect, useRef } from 'react';
 import './about.css'
 import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -6,11 +6,15 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 export function About() {
     const currentDate = new Date().getFullYear();
     const startDate = 2022
+    
     useLayoutEffect(() => 
       {
-        animateScrollSobre();
-        animateScrollInfo();
-        animateFadeOutSobreInfo();
+        const ctx = gsap.context(() => 
+          {
+            animateScrollSobre();
+            animateScrollInfo();
+            animateFadeOutSobreInfo();    
+          });
         return () => {
           gsap.killTweensOf('#sobre');
           gsap.killTweensOf('#sobre-mim');
@@ -18,6 +22,7 @@ export function About() {
           gsap.killTweensOf('#info-1');
           gsap.killTweensOf('#info-2');
           gsap.killTweensOf('#info-3');
+          ctx.revert();
         }
       }, 
     []); 
@@ -40,7 +45,7 @@ export function About() {
         <section id='sobre' className="hidden overflow-hidden container-sobre h-screen w-screen flex gap-6 flex-col justify-start items-center">
             <h1 id='sobre-mim' className='text-4xl text-white mb-10'>SOBRE MIM</h1>
             <div id='info' className=" flex flex-col gap-2 justify-center text-center items-center w-3/5">
-                <p id='info-1' className='text-reveal text-5xl text-white'>Me chamo João Victor, tenho <span className='text-purple-500 text-5xl'>24 anos</span>,
+                <p id='info-1' className='text-reveal text-5xl text-white'>Me chamo João Victor, tenho <span className='text-purple-500 text-5xl'>{new Date().getFullYear() - 2000} anos</span>,
                     trabalho com TI a <span className='text-purple-500 text-5xl'>{currentDate - startDate} anos,</span> atualmente estou cursando
                     <span className='text-purple-500 text-5xl'> Analise e desenvolvimento de sistemas</span>.</p>
                 <p id='info-2' className='text-reveal text-5xl text-white mt-7'>Amante de arquitetura de software, Linux e aplicações nativas em cloud.</p>
@@ -82,7 +87,7 @@ function animateScrollInfo() {
     );
     const infoList = ['#info-1', '#info-2', '#info-3'];
     infoList.forEach(info => {
-      animateScrollSobre.to(info, {
+      animateScrollSobre.fromTo(info, {opacity: 0}, {
         ease: 'power3.inOut', // Corrigida a propriedade ease      
         opacity: 1,
         transform: 'translateY(0px)',
@@ -198,7 +203,7 @@ function animateScrollInfoJaFiz() {
     );
     const infoList = ['#info-1-ja-fiz', '#info-2-ja-fiz', '#info-3-ja-fiz'];
     infoList.forEach(info => {
-      animateScrollSobre.to(info, {
+      animateScrollSobre.fromTo(info, {opacity: 0}, {
         ease: 'power3.inOut', // Corrigida a propriedade ease      
         opacity: 1,
         transform: 'translateY(0px)',
@@ -206,7 +211,6 @@ function animateScrollInfoJaFiz() {
         delay: 15,
         alpha: 1
       })
-  
     })
 }
 
