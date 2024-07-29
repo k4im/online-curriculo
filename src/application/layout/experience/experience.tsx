@@ -6,6 +6,7 @@ import { useLayoutEffect, useRef } from 'react';
 export function Experience() {
     useLayoutEffect(() => {
         animateBallReveal();
+        return () => gsap.killTweensOf('#xp');
     }, [])
     const xpBallSection = useRef(null);
     return <>

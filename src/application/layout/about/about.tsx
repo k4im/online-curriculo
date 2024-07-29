@@ -6,14 +6,34 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 export function About() {
     const currentDate = new Date().getFullYear();
     const startDate = 2022
-    useLayoutEffect(() => {
+    useLayoutEffect(() => 
+      {
         animateScrollSobre();
         animateScrollInfo();
         animateFadeOutSobreInfo();
+        return () => {
+          gsap.killTweensOf('#sobre');
+          gsap.killTweensOf('#sobre-mim');
+          gsap.killTweensOf('#info');
+          gsap.killTweensOf('#info-1');
+          gsap.killTweensOf('#info-2');
+          gsap.killTweensOf('#info-3');
+        }
+      }, 
+    []); 
+
+    useLayoutEffect(() => {
         animateScrollJaFiz();
         animateScrollInfoJaFiz();
         animateFadeOutSobreOqJaFiz();
-        return () => gsap.killTweensOf('#sobre-mim')
+
+        return () => {
+          gsap.killTweensOf('#oq-fiz');
+          gsap.killTweensOf('#oq-ja-fiz');
+          gsap.killTweensOf('#info-1-ja-fiz');
+          gsap.killTweensOf('#info-2-ja-fiz');
+          gsap.killTweensOf('#info-3-ja-fiz');
+        }
       }, [])
     
     return <>

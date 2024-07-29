@@ -19,7 +19,14 @@ export function Hero() {
       comp
     );
 
-    return () => ctx.revert();
+    return () => {
+      gsap.killTweensOf('#hero-section');
+      gsap.killTweensOf('#slogan');
+      gsap.killTweensOf('.h2-container');
+      gsap.killTweensOf('.scroll-container');
+      gsap.killTweensOf('.scroll-ball');
+      ctx.revert()
+    };
   }, [])
   return <>
     <section ref={comp} id='hero-section' className='z-10 bg-gradient-to-r from-gray-950 to-gray-900 h-screen w-screen flex flex-col justify-start gap-64 items-center'>

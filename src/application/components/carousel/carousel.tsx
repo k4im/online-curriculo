@@ -12,7 +12,11 @@ export function Carousel()
           wrapperRef
         );
     
-        return () => ctx.revert();
+        return () => {
+          gsap.killTweensOf('#carousel')
+          gsap.killTweensOf('.wrapper')
+          // ctx.revert()
+        };
       }, [])
     return <>
       <div id='carousel' className="overflow-hidden carrousel" ref={wrapperRef}>
